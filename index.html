@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Todo
+Add firebase
+Fix home page picture (Move it down so as it is not cut off)
+Add logo to the forums page
+Setup a CRY twitter facebook and gmail (Josh is working on it)
+Get the real logo done (Todd is working on it)
+add the rest of the forums topics
+Figure out how to use heroku and get the site hosted
+Add some kinda tear drop logo to show up on the tab when site is open
+Fix forums page so as the picture from the home page is not showing throgh the toolbar
+-->
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+
+	<title>CRY Gaming</title>
+
+  <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main1.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body class="home">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html">CRY Gaming</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="about.html">Forums</a></li>
+					<li class="dropdown">
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+
+	<!-- Intro -->
+	<div class="container text-center">
+		<br> <br>
+		<h2 class="bold">Shed A Fatal Tear!</h2>
+		<p class="text-muted">
+			Welcome to the CRY Gaming website.
+		</p>
+	</div>
+	<!-- /Intro-->
+
+	<!-- Highlights - jumbotron -->
+	<div class="jumbotron top-space">
+		<div class="container">
+
+
+
+			<h3 class="text-center thin">The new CRY Gaming we are back and better then ever!</h3>
+
+			<div class="row">
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-users"></i>User-powered</h4></div>
+					<div class="h-body text-center">
+						<p>CRY Gaming is powered by you the user. To us its all about the community. You'er what keeps us going and you and your feedback means everything to us!</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-gamepad"></i>Cross-Platform</h4></div>
+					<div class="h-body text-center">
+						<p>CRY gaming is a cross platfrom gaming community. We have a PC and Xbox 360 community and are looking to expand to other platfroms.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Recruiting</h4></div>
+					<div class="h-body text-center">
+						<p>CRY gaming is always looking for new mature members. No hard commitments to live up to and it only takes a few clicks to signup. </p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-exclamation-triangle"></i>Competitive</h4></div>
+					<div class="h-body text-center">
+						<p>CRY Gaming also has competitive teams. When playing for fun is not cutting it anymore join one of the many competitive teams CRY Gaming offers. </p>
+					</div>
+				</div>
+			</div> <!-- /row  -->
+
+		</div>
+	</div>
+
+	<!-- Social links. @TODO: replace by link/instructions in template -->
+	<section id="social">
+		<div class="container">
+			<div class="wrapper clearfix">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_linkedin_counter"></a>
+				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+				</div>
+				<!-- AddThis Button END -->
+			</div>
+		</div>
+	</section>
+	<!-- /social links -->
+
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+								<a href="mailto:#">cry_gaming@yahoo.com</a><br>
+								<br>
+
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow Us!</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href="https://twitter.com/CRYGaming1"><i class="fa fa-twitter fa-2"></i></a>
+								<a href="https://facebook.com/crygaming1"><i class="fa fa-facebook fa-2"></i></a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Feedback</h3>
+						<div class="widget-body">
+							<p>Any feedback/qustions to CRY Gaming and how we work or how we do things may be asked on the forums. </p>
+							<p>This is my first real website so any feedback you might have would be fantastic as I am always looking for ways to inprove opon my skills.</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Home</a> |
+								<a href="about.html">Forums</a> |
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2014, CRY Gaming Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "cry",
+  "version": "0.1.0",
+  "description": "Shed a fatal tear",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "license": "MIT"
+}
