@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="cryApp">
 
 <!-- Todo
 Add logo to the forums page
@@ -7,19 +7,11 @@ Get the real logo done (Todd is working on it)
 add the rest of the forums topics
 Add some kinda tear drop logo to show up on the tab when site is open
 -->
-
-
-
-
-
-
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
-	<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+	<meta name="author"      content="Jared (Redx.co)">
 
 	<title>CRY Gaming</title>
 
@@ -40,7 +32,7 @@ Add some kinda tear drop logo to show up on the tab when site is open
 	<![endif]-->
 </head>
 
-<body class="home">
+<body class="home" ng-controller="CryCtrl">
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 		<div class="container">
@@ -88,32 +80,12 @@ Add some kinda tear drop logo to show up on the tab when site is open
 			<h3 class="text-center thin">The new CRY Gaming we are back and better than ever!</h3>
 
 			<div class="row">
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-users"></i>User-powered</h4></div>
+				<div ng-repeat="about in abouts" class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-{{about.icon}}"></i>{{about.area}}</h4></div>
 					<div class="h-body text-center">
-						<p>CRY Gaming is powered by you the user. To us its all about the community. You're what keeps us going and you and your feedback means everything to us!</p>
+						<p>{{about.description}}</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-gamepad"></i>Cross-Platform</h4></div>
-					<div class="h-body text-center">
-						<p>CRY gaming is a cross platfrom gaming community. We have a PC and Xbox 360 community and are looking to expand to other platfroms.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Recruiting</h4></div>
-					<div class="h-body text-center">
-						<p>CRY gaming is always looking for new mature members. No hard commitments to live up to and it only takes a few clicks to signup. </p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-exclamation-triangle"></i>Competitive</h4></div>
-					<div class="h-body text-center">
-						<p>CRY Gaming also has competitive teams. When playing for fun is not cutting it anymore join one of the many competitive teams CRY Gaming offers. </p>
-					</div>
-				</div>
-			</div> <!-- /row  -->
-
 		</div>
 	</div>
 
@@ -210,5 +182,10 @@ Add some kinda tear drop logo to show up on the tab when site is open
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+	<!-- AngularFire -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
